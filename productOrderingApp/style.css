@@ -1,0 +1,30 @@
+* {
+    /* デフォルトをリセット */
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+margin: 1em 1em 1em 1em;
+}
+
+table {
+border-collapse: collapse;
+}
+th {
+background: #87cefa;
+}
+th,
+td {
+width: 100px;
+border: 1px solid;
+text-align: center;
+}
+
+button {
+margin: 10px;
+}
+
+.red {
+color: red;
+}

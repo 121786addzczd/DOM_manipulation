@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>一覧画面</title>
+  <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-100 h-screen font-sans">
+  <header class="bg-blue-600 text-white p-4 shadow-md">
+    <h1 class="text-2xl font-bold">商品注文一覧</h1>
+    <p class="mt-2">下のメニューから店名を選択し、商品を注文してください。</p>
+  </header>
+
+  <div class="container mx-auto mt-10">
+    <div class="flex items-center mb-4">
+      <p class="text-xl font-semibold mr-4">店名選択：</p>
+      <select id="shop-list"
+        class="block appearance-none w-1/2 bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline-blue focus:border-blue-300">
+        <option value="">選択してください</option>
+      </select>
+    </div>
+  </div>
+  <div id="shop-area" class="container mx-auto mt-10 p-5 bg-white rounded shadow-xl"></div>
+
+  <script src="fetchData.js"></script>
+  <script src="orderList.js"></script>
+</body>
+
+</html>
